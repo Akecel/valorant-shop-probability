@@ -1,6 +1,11 @@
 # Valorant Shop Probability Simulator 🚀
 Algorithm simulating the number of days it takes for the skin you want to appear in the game store
 
+## Requirement
+- `python3`
+- `pandas`
+- `matplotlib`
+
 ## Configuration
 First of all, there are several variables to configure in order to use this script
 
