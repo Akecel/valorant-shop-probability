@@ -57,7 +57,7 @@ print("For the selected number of tests the avarage in day(s) to get ANY of the 
 print("\nIn the BEST case, it took ", bestCase, " day(s) to find any of the desired skins.")
 print("In the WORST case, it took ", worstCase, " day(s) to find any of the desired skins.")
 
-df = pd.DataFrame({ 'Player_ID': playerArray, 'Days': daysArray })
+df = pd.DataFrame({ 'Test_ID': testArray, 'Days': daysArray })
 df.head()
 
 print("Total Tests: ", controle+1, "\n")
@@ -97,7 +97,7 @@ plt.xlabel('Tests')
 plt.grid()
 plt.figure()
 
-plt.plot(daysArray, playerArray)
+plt.plot(daysArray, testArray)
 plt.title('Test ID X Days To Find')
 plt.xlabel('Days')
 plt.ylabel('Test')
