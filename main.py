@@ -5,7 +5,6 @@ import numpy as np
 
 purchasableSkins = 347 # Ammount of valorant skins that are purchasable from the store.
 ownedSkins = 20 # Owned skins.
-skinsId = [45] # List of ID's representing the specific skins that you want to appear in the valorant store. Make sure not to put a value greater than the one defined in purchasableSkins above.
 averageDayBetweenPurchase = 30 # Average number of days between each skin purchase.
 numberOfTests = 1000 # Number of times you want to test the algorithm (an avarage value of days will be calculated).
 
@@ -18,6 +17,7 @@ playerArray = []
 
 for controle in range(numberOfTests):
   validPurchaasableSkins = purchasableSkins - ownedSkins # Actual purchasable skins
+  wantedSkin = random.randint(1,validPurchaasableSkins) # Randomly choose wanted skin
   daysCounter = 0
   foundAnySkin = False
 
@@ -39,9 +39,8 @@ for controle in range(numberOfTests):
       while (aux in skinsOfTheDay): # If the skin is already selected for today store,
         aux = random.randint(1,validPurchaasableSkins) # Randomly choose another, because Valorant doesn't show up the same skin twice in the same day
       skinsOfTheDay.append(aux)
-    for id in skinsId:
-      if id in skinsOfTheDay:
-        foundAnySkin = True
+    if wantedSkin in skinsOfTheDay:
+      foundAnySkin = True
   if daysCounter < bestCase: # Find best case
     bestCase = daysCounter
   if daysCounter > worstCase: # Find worst case
