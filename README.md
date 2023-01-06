@@ -2,7 +2,7 @@
 Algorithm simulating the number of days it takes for the skin you want to appear in the game store
 
 ## Configuration
-First of all, there are several variables to configure in order to use this simulator
+First of all, there are several variables to configure in order to use this script
 
 - **purchasableSkins**: Here you can specify the **amount of skins** available for purchase in the Valorant store. (Do not count agent skin or battlepass skins)
 
