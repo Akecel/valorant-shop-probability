@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import pandas as pd
 import numpy as np
 
-purchasableSkins = 347 # Ammount of valorant skins that are purchasable from the store.
+purchasableSkins = 347 # Amount of valorant skins that are purchasable from the store.
 ownedSkins = 20 # Owned skins.
 averageDayBetweenPurchase = 30 # Average number of days between each skin purchase.
 numberOfTests = 1000 # Number of times you want to test the algorithm (an avarage value of days will be calculated).
@@ -50,8 +50,8 @@ for controle in range(numberOfTests):
 
 avarage = avarage/numberOfTests # Avarage calculation (2)
 
-print("Ammount of tests X Time to get the skin")
-print("Ammount of tests executed : ", numberOfTests)
+print("Amount of tests X Time to get the skin")
+print("Amount of tests executed : ", numberOfTests)
 
 print("For the selected number of tests the avarage in day(s) to get ANY of the skins you want is: ", round(avarage), " days.")
 print("\nIn the BEST case, it took ", bestCase, " day(s) to find any of the desired skins.")
@@ -90,7 +90,7 @@ oneYear = df['Days'][df['Days'] >= 365].count()
 print(oneYear, " test(s) - at least 1 year\n")
 
 plt.figure()
-plt.title('Time (Days) To Get Skin X Ammount of tests')
+plt.title('Time (Days) To Get Skin X Amount of tests')
 plt.hist(daysArray, orientation='horizontal')
 plt.ylabel('Days')
 plt.xlabel('Tests')
