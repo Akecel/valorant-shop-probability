@@ -17,6 +17,6 @@ First of all, there are several variables to configure in order to use this simu
 ```python
 purchasableSkins = 347
 ownedSkins = 20
-averageDayBetweenPurchase
+averageDayBetweenPurchase = 30
 numberOfTests = 1000
 ```
