@@ -25,3 +25,23 @@ ownedSkins = 20
 averageDayBetweenPurchase = 30
 numberOfTests = 1000
 ```
+
+## Run script
+
+```
+python3 valorant-shop-probability/main.py
+```
+
+## Authors
+
+* [**Akecel**](https://github.com/Akecel) - *Script author*
+
+See also the list of [contributors](https://github.com/Akecel/gechoplate/graphs/contributors) who participated in this project.
+
+## Licence
+
+This project is licensed under the [MIT License](https://opensource.org/licenses)  - see the [LICENSE.md](https://github.com/Akecel/valorant-shop-probability/blob/master/LICENSE) file for details.
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
