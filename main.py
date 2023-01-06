@@ -13,7 +13,7 @@ worstCase = float('-inf')
 
 avarage = 0
 daysArray = []
-playerArray = []
+testArray = []
 
 for controle in range(numberOfTests):
   validPurchaasableSkins = purchasableSkins - ownedSkins # Actual purchasable skins
@@ -21,7 +21,7 @@ for controle in range(numberOfTests):
   daysCounter = 0
   foundAnySkin = False
 
-  playerArray.append(controle)
+  testArray.append(controle)
 
   while not foundAnySkin:
 
@@ -98,7 +98,7 @@ plt.grid()
 plt.figure()
 
 plt.plot(daysArray, playerArray)
-plt.title('Player ID X Days To Find')
+plt.title('Test ID X Days To Find')
 plt.xlabel('Days')
-plt.ylabel('Player')
+plt.ylabel('Test')
 plt.show()
